@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+<div class="panel panel-primary"
+     ng-controller="PersonListCtrl as vm">
+    <div class="panel-heading"
+         style="font-size:large">
+        Person List
+    </div>
+
+    <div class="panel-body">
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Job Title</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in vm.persons">
+                    <td>{{ person.ID}}</td>
+                    <td>{{ person.FirstName}}</td>
+                    <td>{{ person.LastName }}</td>
+                    <td>{{ person.JobTitle }}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
